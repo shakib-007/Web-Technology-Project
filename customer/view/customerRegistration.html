@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <script src="js/reg.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assests/style.css">
+</head>
+<body>
+  <table border="1" width="100%" cellspacing="0">
+    <tr>
+            <td align="right" class="hf">
+                <h1 align="left" style="color: cornsilk">Tourism Management System</h1>
+              <a href="../../home.php" class="a1">HOME</a>          
+                <a href="customerLogin.html" class="a1"> Login </a>               
+                <a href="customerRegistration.html" class="a1"> Registration </a> 
+                
+            </td>
+        </tr>
+    <tr height = "400px">
+      <td align="center">
+        
+        <form method="POST" action="../controller/regCheck.php" onsubmit="return regValidation()">
+        <fieldset style="width: 30%" class="table">
+              <legend>REGISTRATION</legend>
+              <table>
+                <tr>
+                  <td>Name</td>
+                  <td>:<input type="text" id="name" name="name" value="">  </td>
+                  <td><span id="error1"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                       <hr>
+                    </td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>:<input type="email" id="email" name="email" value="">  </td>
+                  <td><span id="error2"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <hr>
+                    </td>
+                </tr>
+                <tr>
+                  <td>Userame</td>     
+                  <td>:<input type="text" id="username" name="username" value="">  </td>
+                 <td> <span id="error3"></span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                      <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Password</td>     
+                  <td>:<input type="password" id="password" name="password" value=""> </td>
+                  <td><span id="error4"></span></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                      <hr>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Confirm Password</td>
+                  <td>:<input type="password" id="conpass" name="conpass" value=""> </td>
+                  <td><span id="error5"></span></td>
+                </tr>
+                <tr>
+                   <td colspan="2">
+                    <hr>
+                    </td>
+                </tr>
+           </table>
+            <fieldset >
+            <legend>Gender</legend>
+                  <input type="radio" name="gender" value="Male"> Male
+                  <input type="radio" name="gender" value="Female"> Female
+                  <input type="radio" name="gender" value="Other"> Other
+                  
+            
+             </fieldset>
+
+             <fieldset >
+            <legend>Date Of Birth</legend>
+                <input type="text" id="dd" name="dd" min="1" max="31" size="2"> /
+                <input type="text" id="mm" name="mm" min="1" max="12" size="2"> /
+                <input type="text" id="yyy" name="yyy" min="1950" max="2050" size="2"> (dd/mm/yyy)
+                
+            
+            </fieldset>
+          <br>
+          <span id="error6"></span>
+          
+          
+              <input type="submit" class="button" name="submit" value="Submit">
+              <input type="reset" class="button" name="reset" value="Reset">
+        
+          </fieldset>
+        </form>
+        <br>
+      </td>
+    </tr>
+    <tr height = "50px" class="hf">
+      <td >
+        <center> Copyright@2017 </center>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
